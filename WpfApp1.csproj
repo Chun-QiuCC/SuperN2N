@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>bgp.ico</ApplicationIcon>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Authors>ChunQiu</Authors>
+    <AssemblyName>SuperN2N</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bgp.ico" />
+  </ItemGroup>
+
+</Project>

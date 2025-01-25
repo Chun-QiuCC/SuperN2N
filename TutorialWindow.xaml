@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfApp1.TutorialWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="教程" Height="450" Width="800"
+        Background="#F0F0F0"
+        FontFamily="Segoe UI"
+        ResizeMode="NoResize">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="20">
+                <!-- 标题 -->
+                <TextBlock Text="使用教程" FontWeight="Bold" FontSize="24" Foreground="#337AB7" Margin="0,0,0,20"/>
+
+                <!-- 虚拟IP -->
+                <TextBlock Text="虚拟IP：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="虚拟网卡的IP，留空由Supernode服务器自动分配" FontSize="16" Margin="0,0,0,20"/>
+
+                <!-- 分隔线 -->
+                <Separator Margin="0,10,0,10"/>
+
+                <!-- 社区名称 -->
+                <TextBlock Text="社区名称：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="每个社区类似一个群组，不同的社区之间不相互通信，分配不同的IP段" FontSize="16" Margin="0,0,0,20"/>
+
+                <!-- 分隔线 -->
+                <Separator Margin="0,10,0,10"/>
+
+                <!-- 安全密码 -->
+                <TextBlock Text="安全密码：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="即使在同一个社区内，安全密码不相同也无法相互通信" FontSize="16" Margin="0,0,0,20"/>
+
+                <!-- 分隔线 -->
+                <Separator Margin="0,10,0,10"/>
+
+                <!-- 服务器IP -->
+                <TextBlock Text="服务器IP：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="必填项 | Supernode服务器的IP地址" FontSize="16"  Margin="0,0,0,20"/>
+
+                <!-- 分隔线 -->
+                <Separator Margin="0,10,0,10"/>
+
+                <!-- 端口号 -->
+                <TextBlock Text="端口号：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="必填项 | Supernode服务器的端口" FontSize="16" Margin="0,0,0,20"/>
+
+                <Separator Margin="0,10,0,10"/>
+
+                <!-- 检查TAP驱动 -->
+                <TextBlock Text="检查TAP驱动：" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="必选 | N2N依赖Windoes TAP虚拟网卡驱动，点击检查后自动检查是否安装，如未安装则可选运行安装包.如果已安装过TAP驱动后又卸载，由于注册表残留的问题会导致无法正常判断是否安装，可手动在“tap-windows”文件夹中找到安装包自行安装" TextWrapping="Wrap" FontSize="16" Margin="0,0,0,20"/>
+
+                <!-- 分隔线 -->
+                <Separator Margin="0,10,0,10"/>
+                
+                <!-- 查看N2N日志 -->
+                <TextBlock Text="查看N2N日志" FontWeight="Bold" FontSize="18" Foreground="#337AB7" Margin="0,0,0,5"/>
+                <TextBlock Text="点击后打开的窗口内会显示N2N的运行日志。上方有关键词搜索功能方便更快排除问题。当你发现N2N无法正常运行且自己无法判断问题时，请导出N2N日志发送给别人或AI进行分析，请不要直接截图此页面！" TextWrapping="Wrap" FontSize="16" Margin="0,0,0,20"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
+
+
+
